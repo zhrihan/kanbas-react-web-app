@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css">
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Implement links to Kanbas and Course Navigation -->
+    <div class="wd-flex-row ">
+        <div class="d-none d-md-block ">
+            <ul class="wd-kanbas-navigation">
+                <ul class="wd-kanbas-navigation wd-scrollable-nav">
+                    <li><a href="http://northeastern.edu">
+                            <p class="wd-nav-p"><img src="/images/NEU.png" class="icon"></p>
+                        </a></li>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa fa-user-circle" id="wd-account-avatar" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Account</p>
+                        </a></li>
+                    <li >
+                        <a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa fa-tachometer"></i>
+                            <P class="wd-nav-p">Dashboard</P>
+                        </a>
+                    </li >
+                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Courses</p>
+                        </a> </li>
+                    <li><a href="#"><i class="fa fa-calendar"></i>
+                            <p>Calendar</p class="wd-nav-p">
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Inbox</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>
+                            <p class="wd-nav-p">History</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Studio</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Help</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Messages</p>
+                        </a></li>
+                </ul>
+                <!-- Copy Kanbas Navigation Here -->
+            </ul>
+        </div>
+        <div class="w-100">
+            <div class="wd-flex-col">
+                <div class="d-none d-md-block">
+                    <div class="d-flex justify-content-between my-3 wd-div-pl-20">
+                        <div class="d-flex">
+                            <div class="col-auto">
+                                <i class="fa fa-bars wd-icon-pt-10" aria-hidden="true"></i>
+                            </div>
+                            <div class="col text-start d-flex align-items-center wd-home-pl">
+                                <a href="#" class="d-flex align-items-center wd-txt-dec-red">
+                                    <p class="mb-0 d-inline">CS5010.MERGED.202410</p>
+                                    <i class="fa fa-chevron-right mx-2" aria-hidden="true"></i>
+                                    <p class="mb-0 d-inline" id="wd-txt-dec-black">Modules</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-end wd-div-mr-20">
+                            <button class="btn wd-btn-gray wd-sharp-corners">
+                                <i class="fa fa-binoculars"></i> Student view
+                            </button>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div class="d-flex flex-column w-100">
+            <div class="d-block d-sm-block d-md-none">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="container-fluid p-0">
+                        <div class="d-flex justify-content-between align-items-center w-100 bg-dark"
+                            style="height: 75px;">
+                            <button class="navbar-toggler focus-ring focus-ring-dark" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" style="border: none;">
+                                <i class="fa fa-bars" style="font-size: 24px; margin-right: 20px; color: white;"></i>
+                            </button>
+                            <div style="text-align: center; color: white;">
+                                <a href="#"
+                                    class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                                    CS5610.202021.1231231
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <i class="fa fa-binoculars" style="color: white;"></i>
+                                <button class="navbar-toggler focus-ring focus-ring-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                                    style="border: none;">
+                                    <i class="fa fa-chevron-down"
+                                        style="font-size: 14px; margin-right: 20px; color: white;"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <div>&nbsp;</div>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul style="list-style: none;">
+                                    <li class="my-2"><a href="/Kanbas/Dashboard/screen.html"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-tachometer me-2 fs-24"></i>Dashboard</a></li>
+                                    <li class="my-2"><a href="/Kanbas/Account/Profile/screen.html"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                                            <i class="fa fa-user-circle me-2 fs-24"></i>Account</a></li>
+                                    <li class="my-2"><a href="/Kanbas/Courses/Home/screen.html"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-book me-2 fs-24"></i>Courses</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-calendar me-2 fs-24"></i>Calendar</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-inbox me-2 fs-24"></i>Inbox</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-history me-2 fs-24"></i>History</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-youtube-play me-2 fs-24"></i></i>Studio</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-sign-out me-2 fs-24"></i>Commons</a></li>
+                                    <li class="my-2"><a href="#"
+                                            class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                                                class="fa fa-question-circle me-2 fs-24"></i>Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02"
+                            style="background-color: white; padding: 0; margin: 0;">
+                            <ul style="list-style: none; padding: 0;" class="text-danger px-1">
+                                <li>
+                                    <i class="fa fa-home me-2" aria-hidden="true"></i><a
+                                        href="/Kanbas/Courses/Home/screen.html"
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                                        Home</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-object-group me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                                </li>
+                                <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="http://piazza.com">Piazza</a></li>
+                                <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Zoom</a></li>
+                                <li>
+                                    <i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                                </li>
+                                <li><i class="fa fa-rocket me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Quizzes</a></li>
+                                <li><i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                                <li><i class="fa fa-users me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">People</a></li>
+                                <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Panopto Video</a></li>
+                                <li><i class="fa fa-comments-o me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Discussions</a></li>
+                                <li><i class="fa fa-bullhorn me-2"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Announcements</a></li>
+                                <li><i class="fa fa-file-text-o me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Pages</a></li>
+                                <li><i class="fa fa-file-o me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Files</a></li>
+                                <li><i class="fa fa-clipboard me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Rubrics</a></li>
+                                <li><i class="fa fa-crosshairs me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Outcomes</a></li>
+                                <li><i class="fa fa-circle-thin me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Collaborations</a></li>
+                                <li><i class="fa fa-book me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="#">Syllabus</a></li>
+                                <li><i class="fa fa-cog me-2" aria-hidden="true"></i><a
+                                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                        href="/Kanbas/Courses/Settings/Coursedetails/screen.html">Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+                
+
+
+                <div>
+                    <div class="wd-flex-row">
+                        <div class="d-none d-md-block">
+                            <div class="ps-3 mb-3 wd-fs-12 w-100"><em>CS5610 Spring...</em></div>
+                            <ul class="wd-navigation">
+                                <ul class="wd-navigation">
+                                    <li ><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                                    <li class="wd-active"><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                                    <li><a href="http://piazza.com">Piazza</a></li>
+                                    <li><a href="#">Zoom Meetings</a></li>
+                                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                                    <li><a href="#">Quizzes</a></li>
+                                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Panopto Video</a></li>
+                                    <li><a href="#">Discussions</a></li>
+                                    <li><a href="#">Announcements</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Files</a></li>
+                                    <li><a href="#">Rubrics</a></li>
+                                    <li><a href="#">Outcomes</a></li>
+                                    <li><a href="#">Collaborations</a></li>
+                                    <li><a href="#">Syllabus</a></li>
+                                    <li><a href="/Kanbas/Courses/Settings/Coursedetails/screen.html">Settings</a></li>
+                                </ul>
+                                <!-- Copy Course Navigation Here -->
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row w-100">
+
+                        <div class="flex-fill">
+                            <ul class="list-group wd-modules">
+                                <div class="wd-align-right wd-div-mb">
+                                    <button class="btn wd-btn-gray wd-mr wd-btn-p-5 ">Collapse all</button>
+                                    <button class="btn wd-btn-gray wd-mr wd-btn-p-5 ">View progress</button>
+                                    <div class="dropdown wd-pr">
+                                        <button class="btn wd-btn-gray dropdown-toggle wd-btn-p-5 wd-mr" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-check-circle-o text-success"></i> Publish all
+                                        </button>
+                                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#"><i
+                                                        class="fa fa-check-circle text-success"></i>
+                                                    Publish all</a></li>
+                                            <li><a class="dropdown-item" href="#">Publish all modules and items</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Unpublish</a></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-danger wd-mr wd-btn-p-5"><i class="fa fa-plus"
+                                            aria-hidden="true"></i>
+                                        Module</button>
+                                    <button class="btn wd-btn-gray wd-mr wd-btn-p-5"><i
+                                            class="fa fa-ellipsis-v ms-2 wd-icon-pr-8"></i></button>
+                                </div>
+                                <div>
+                                    <ul class="list-group wd-modules mt-4">
+                                        <li class="list-group-items">
+                                            <div class="module-header py-3">
+                                                <span class="me-2 ms-1 cursor-pointer">
+                                                    <i class="fa fa-ellipsis-v fs-20"></i>
+                                                    <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                </span>
+
+                                                <div class="d-inline-flex align-items-center justify-content-center">
+                                                    <button class="btn dropdown-toggle me-2"></button>
+                                                    <span class="fw-bold cursor-pointer">Week 0 - INTRO</span>
+                                                </div>
+                                                <span class="float-end pe-2">
+                                                    <button class="dropdown-toggle bg-transparent me-3">
+                                                        <i class="fa fa-check-circle text-success fs-20"></i>
+                                                    </button>
+                                                    <i class="fa fa-plus me-3 fs-20 cursor-pointer"
+                                                        style="color: gray;"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                </span>
+                                            </div>
+                                            <ul class="list-group wd-list-style">
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        LEARNING OBJECTIVES
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Introduction
+                                                                to the course</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Learn
+                                                                what is web development</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Creating
+                                                                a development environment</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Creating
+                                                                a web application</a>
+
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                        <div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Gettins
+                                                                started with the 1st assignment</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                        <div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        READING
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Chapter
+                                                                1 - Introduction</a>
+
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4 w-50">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Chapter
+                                                                2 - Creating User Interfaces with HTML</a>
+
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        SLIDES
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <i class="fa fa-link fa-rotate-270 text-success"></i>
+                                                            <a href="#"
+                                                                class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover p-4">Introduction
+                                                                to Web Dev <i class="fa fa-sign-out"></i></a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <i class="fa fa-link fa-rotate-270 text-success"></i>
+                                                            <a href="#"
+                                                                class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover p-4">Creating
+                                                                a
+                                                                HTTP Server with Node.js <i
+                                                                    class="fa fa-sign-out"></i></a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <i class="fa fa-link fa-rotate-270 text-success"></i>
+                                                            <a href="#"
+                                                                class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover p-4">Creating
+                                                                a
+                                                                React App <i class="fa fa-sign-out"></i></a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-items mt-4">
+                                            <div class="module-header py-3">
+                                                <span class="me-2 ms-1">
+                                                    <i class="fa fa-ellipsis-v fs-20"></i>
+                                                    <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                </span>
+
+                                                <div class="d-inline-flex align-items-center justify-content-center">
+                                                    <button class="btn dropdown-toggle me-2"></button>
+                                                    <span class="fw-bold" style="cursor: pointer;">Week 1 - HTML</span>
+                                                </div>
+                                                <span class="float-end pe-2">
+                                                    <button class="dropdown-toggle bg-transparent me-3">
+                                                        <i class="fa fa-check-circle text-success fs-20"></i>
+                                                    </button>
+                                                    <i class="fa fa-plus me-3 fs-20 cursor-pointer"
+                                                        style="color: gray;"></i>
+                                                    <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                </span>
+                                            </div>
+                                            <ul class="list-group wd-list-style">
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        LEARNING OBJECTIVES
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Introduction
+                                                                to HTML</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">What
+                                                                is HTML?</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Learning
+                                                                Different HTML Tags</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Anchor
+                                                                Tags</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                        <div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        READING
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Chapter
+                                                                2 - Creating User Interfaces with HTML</a>
+
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4 w-50">
+                                                            <a href="#"
+                                                                class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Chapter
+                                                                3 - Styling with CSS</a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="module-content fw-bold py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        SLIDES
+                                                        <span class="float-end pe-2">
+                                                            <i
+                                                                class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                            <i class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <i class="fa fa-link fa-rotate-270 text-success"></i>
+                                                            <a href="#"
+                                                                class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover p-4">Introduction
+                                                                to HTML <i class="fa fa-sign-out"></i></a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-items module-li">
+                                                    <div class="py-2">
+                                                        <span class="me-2 ms-1">
+                                                            <i class="fa fa-ellipsis-v fs-20"></i>
+                                                            <i class="fa fa-ellipsis-v fs-20 ml-n3"></i>
+                                                        </span>
+                                                        <span class="module-content p-4">
+                                                            <i class="fa fa-link fa-rotate-270 text-success"></i>
+                                                            <a href="#"
+                                                                class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover p-4">Creating
+                                                                a
+                                                                Webpage with HTML <i class="fa fa-sign-out"></i></a>
+                                                            <span class="float-end pe-2">
+                                                                <i
+                                                                    class="fa fa-check-circle text-success me-3 fs-20 cursor-pointer"></i>
+                                                                <i
+                                                                    class="fa fa-ellipsis-v ms-2 fs-20 cursor-pointer"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+
+                                    <!-- Copy Course Home here -->
+                            </ul>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

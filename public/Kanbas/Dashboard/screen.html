@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css">
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Implement links to Kanbas and Course Navigation -->
+  <div class="wd-flex-row ">
+    <div class="d-none d-md-block ">
+      <ul class="wd-kanbas-navigation">
+        <ul class="wd-kanbas-navigation wd-scrollable-nav">
+          <li><a href="http://northeastern.edu">
+              <p class="wd-nav-p"><img src="/images/NEU.png" class="icon"></p>
+            </a></li>
+          <li><a href="/Kanbas/Account/Profile/screen.html">
+              <i class="fa fa-user-circle" id="wd-account-avatar" aria-hidden="true"></i>
+              <p class="wd-nav-p">Account</p>
+            </a></li>
+          <li class="wd-active">
+            <a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer"></i>
+              <P class="wd-nav-p">Dashboard</P>
+            </a>
+          </li>
+          <li><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              <p class="wd-nav-p">Courses</p>
+            </a> </li>
+          <li><a href="#"><i class="fa fa-calendar"></i>
+              <p>Calendar</p class="wd-nav-p">
+            </a></li>
+          <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+              <p class="wd-nav-p">Inbox</p>
+            </a></li>
+          <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>
+              <p class="wd-nav-p">History</p>
+            </a></li>
+          <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i>
+              <p class="wd-nav-p">Studio</p>
+            </a></li>
+          <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>
+              <p class="wd-nav-p">Help</p>
+            </a></li>
+          <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
+              <p class="wd-nav-p">Messages</p>
+            </a></li>
+        </ul>
+        <!-- Copy Kanbas Navigation Here -->
+      </ul>
+    </div>
+    <div class="w-100">
+
+        <div class="d-flex flex-column w-100">
+          <div class="d-block d-sm-block d-md-none">
+            <nav class="navbar navbar-expand-lg p-0">
+              <div class="container-fluid p-0">
+                <div class="d-flex justify-content-between align-items-center w-100 bg-dark" style="height: 75px;">
+                  <button class="navbar-toggler focus-ring focus-ring-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" style="border: none;">
+                    <i class="fa fa-bars" style="font-size: 24px; margin-right: 20px; color: white;"></i>
+                  </button>
+                  <div style="text-align: center; color: white;">
+                    <h4><a href="#"
+                      class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                      Dashboard
+                
+                    </a></h4>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fa fa-binoculars" style="color: white;"></i>
+                    <button class="navbar-toggler focus-ring focus-ring-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarTogglerDemo02" style="border: none;">
+                      <i class="fa fa-chevron-down" style="font-size: 14px; margin-right: 20px; color: white;"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <div>&nbsp;</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul style="list-style: none;">
+                      <li class="my-2"><a href="/Kanbas/Dashboard/screen.html"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-tachometer me-2 fs-24"></i>Dashboard</a></li>
+                      <li class="my-2"><a href="/Kanbas/Account/Profile/screen.html"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                          <i class="fa fa-user-circle me-2 fs-24"></i>Account</a></li>
+                      <li class="my-2"><a href="/Kanbas/Courses/Home/screen.html"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-book me-2 fs-24"></i>Courses</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-calendar me-2 fs-24"></i>Calendar</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-inbox me-2 fs-24"></i>Inbox</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-history me-2 fs-24"></i>History</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-youtube-play me-2 fs-24"></i></i>Studio</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-sign-out me-2 fs-24"></i>Commons</a></li>
+                      <li class="my-2"><a href="#"
+                          class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"><i
+                            class="fa fa-question-circle me-2 fs-24"></i>Help</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02"
+                  style="background-color: white; padding: 0; margin: 0;">
+                  <ul style="list-style: none; padding: 0;" class="text-danger px-1">
+                    <li>
+                      <i class="fa fa-home me-2" aria-hidden="true"></i><a href="/Kanbas/Courses/Home/screen.html"
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover">
+                        Home</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-object-group me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                    </li>
+                    <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="http://piazza.com">Piazza</a></li>
+                    <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Zoom</a></li>
+                    <li>
+                      <i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                    </li>
+                    <li><i class="fa fa-rocket me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Quizzes</a></li>
+                    <li><i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><i class="fa fa-users me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">People</a></li>
+                    <li><i class="fa fa-plug me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Panopto Video</a></li>
+                    <li><i class="fa fa-comments-o me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Discussions</a></li>
+                    <li><i class="fa fa-bullhorn me-2"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Announcements</a></li>
+                    <li><i class="fa fa-file-text-o me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Pages</a></li>
+                    <li><i class="fa fa-file-o me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Files</a></li>
+                    <li><i class="fa fa-clipboard me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Rubrics</a></li>
+                    <li><i class="fa fa-crosshairs me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Outcomes</a></li>
+                    <li><i class="fa fa-circle-thin me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Collaborations</a></li>
+                    <li><i class="fa fa-book me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">Syllabus</a></li>
+                    <li><i class="fa fa-cog me-2" aria-hidden="true"></i><a
+                        class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="/Kanbas/Courses/Settings/Coursedetails/screen.html">Settings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div>
+
+            <div class="wd-flex-col wd-div-pl-20">
+              <div>
+                <h1 >Dashboard</h1>
+                <hr />
+                <h2 class="wd-div-pl-30">Published Courses (12)</h2>
+                <hr />
+              </div>
+
+              <div class="d-flex flex-column flex-lg-row w-100">
+                <div class="flex-fill">
+                  <div class="row">
+                    <div class="row row-cols-1 row-cols-md-5 g-4 wd-div-pl-30">
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col wd-div-wid-300">
+                        <div class="card">
+                          <div class="wd-kebab">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color: white;"></i>
+                          </div>
+                          <img src="/images/reactjs.png" class="card-img-top wd-img-height" />
+                          <div class="card-body wd-text-overflow">
+                            <a class="card-title wd-card" href="/Kanbas/Courses/Home/screen.html">
+                              CS1234 Web Development Programming design Paradigms</a>
+                            <p class="card-text wd-card-text">Full Stack software developer
+                              in Web Technologies</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

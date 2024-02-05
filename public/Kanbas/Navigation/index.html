@@ -1,23 +1,58 @@
 <html>
-    <head>
-        <title>Course Navigation</title>
-    </head>
-    <body>
-        <ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html">
-               Account</a></li>
-            <li>
-             <a href="#">Dashboard</a>
-            </li>
-            <li>
-             <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-            </li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-     </ul>             
-    </body>
+
+<head>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="d-none d-md-block ">
+            <ul class="wd-kanbas-navigation">
+                <ul class="wd-kanbas-navigation wd-scrollable-nav">
+                    <li><a href="http://northeastern.edu">
+                            <p class="wd-nav-p">N</p>
+                        </a></li>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa fa-user-circle" id="wd-account-avatar" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Account</p>
+                        </a></li>
+                    <li class="wd-active">
+                        <a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa fa-tachometer"></i>
+                            <P class="wd-nav-p">Dashboard</P>
+                        </a>
+                    </li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Courses</p>
+                        </a> </li>
+                    <li><a href="#"><i class="fa fa-calendar"></i>
+                            <p>Calendar</p class="wd-nav-p">
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Inbox</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>
+                            <p class="wd-nav-p">History</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Studio</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Help</p>
+                        </a></li>
+                    <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
+                            <p class="wd-nav-p">Messages</p>
+                        </a></li>
+                </ul>
+            </ul>
+        </div>
+</body>
+
+
+
 </html>

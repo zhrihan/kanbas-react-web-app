@@ -1,0 +1,43 @@
+.wd-card {
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+
+}
+
+.wd-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wd-kebab {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  
+}
+
+.wd-div-wid-300 {
+  width: 300px;
+}
+
+.wd-img-height {
+  max-height: 150px;
+}
+
+.wd-card-text {
+  white-space: normal;
+}
+
+.wd-td {
+  width: 80px; padding: 0px;
+}
+
+.wd-div-pl-30 {
+  padding-left: 30px;
+}
+.wd-div-pl-50 {
+padding-left: 50px
+}
