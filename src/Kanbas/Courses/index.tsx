@@ -11,7 +11,7 @@ import Grades from "./Grades";
 import AssignmentEditor from "./Assignments/Editor";
 import "./index.css"
 
-function Courses(){
+function Courses({ courses }: { courses: any[]; }){
   const {courseId}=useParams();
   const course=courses.find((course) => course._id===courseId);
   const href= window.location.href;
